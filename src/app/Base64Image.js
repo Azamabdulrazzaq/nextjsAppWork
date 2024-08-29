@@ -1,8 +1,9 @@
 // pages/index.js
+"use client"
 
 import { useState, Image } from 'react';
 
-export default function Home() {
+const Base64Image = () => {
     const [base64, setBase64] = useState(null);
     const [fileName, setFileName] = useState('');
 
@@ -40,3 +41,5 @@ export default function Home() {
         </div>
     );
 }
+
+export default Base64Image
